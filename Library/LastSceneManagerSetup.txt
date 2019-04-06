@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/SpeechAndText/Sample/SampleSpeechToText.unity
+  isLoaded: 1
+  isActive: 1
