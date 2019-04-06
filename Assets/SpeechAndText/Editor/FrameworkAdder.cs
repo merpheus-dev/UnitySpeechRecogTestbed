@@ -25,15 +25,6 @@ public class FrameworkAdder : MonoBehaviour
         pbxProject.ReadFromFile(projectPath);
         string targetGuid = pbxProject.TargetGuidByName("Unity-iPhone");
 
-        // Sample of adding build property
-        pbxProject.AddBuildProperty(targetGuid, "OTHER_LDFLAGS", "-all_load");
-
-        // Sample of setting build property
-        pbxProject.SetBuildProperty(targetGuid, "ENABLE_BITCODE", "NO");
-
-        // Sample of update build property
-        pbxProject.UpdateBuildProperty(targetGuid, "OTHER_LDFLAGS", new string[] { "-ObjC" }, new string[] { "-weak_framework" });
-
         // Sample of adding REQUIRED framwrok
         pbxProject.AddFrameworkToProject(targetGuid, "speech.framework", false);
         pbxProject.AddFrameworkToProject(targetGuid, "AVFoundation.framework", false);
