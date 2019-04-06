@@ -39,11 +39,11 @@ public class FrameworkAdder : MonoBehaviour
         pbxProject.AddFrameworkToProject(targetGuid, "AVFoundation.framework", false);
 
 
-        // Sample of setting compile flags
-        var guid = pbxProject.FindFileGuidByProjectPath("Classes/UI/Keyboard.mm");
-        var flags = pbxProject.GetCompileFlagsForFile(targetGuid, guid);
-        flags.Add("-fno-objc-arc");
-        pbxProject.SetCompileFlagsForFile(targetGuid, guid, flags);
+        //// Sample of setting compile flags
+        //var guid = pbxProject.FindFileGuidByProjectPath("Classes/UI/Keyboard.mm");
+        //var flags = pbxProject.GetCompileFlagsForFile(targetGuid, guid);
+        //flags.Add("-fno-objc-arc");
+        //pbxProject.SetCompileFlagsForFile(targetGuid, guid, flags);
 
         // Apply settings
         File.WriteAllText(projectPath, pbxProject.WriteToString());

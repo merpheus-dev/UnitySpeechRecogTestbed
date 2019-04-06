@@ -60,7 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SpeechAndText\Plist.cs" />
     <Compile Include="Assets\SpeechAndText\Sample\AndroidDebug.cs" />
     <Compile Include="Assets\SpeechAndText\Sample\RotateAnim.cs" />
     <Compile Include="Assets\SpeechAndText\Sample\SampleSpeechToText.cs" />
